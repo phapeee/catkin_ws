@@ -1,0 +1,3 @@
+[submodule "src/master"]
+	path = src/master
+	url = https://github.com/phapeee/master.git

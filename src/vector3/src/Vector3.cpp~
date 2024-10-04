@@ -1,0 +1,75 @@
+#include <geometry_msgs/Vector3.h>
+#include <cmath>
+#include "Vector3/Vector3.h"
+#include <std_msgs/Float64.h>
+
+Vector3::Vector3(geometry_msgs::Vector3 vec){
+                        vec = vec;
+         	}
+Vector3::Vector3(){
+                vec.x = 0.0f;
+		vec.y = 0.0f;
+		vec.z = 0.0f;
+                }
+Vector3::Vector3(double x, double y, double z){
+	vec = Vector3::create(x, y, z);
+}
+double Vector3::magnitude(){
+                        return sqrt(pow(vec.x, 2) + pow(vec.y, 2) + pow(vec.z, 2));
+                }
+void Vector3::normalize(){
+                        double mag = magnitude();
+                        if (mag == 0.0f) return;
+                        else {
+                                vec.x /= mag;
+                                vec.y /= mag;
+                                vec.z /= mag;
+                        }
+                }
+void Vector3::scaleVec(double scale){
+                        vec.x *= scale;
+                        vec.y *= scale;
+                        vec.z *= scale;
+                }
+void Vector3::setVector(geometry_msgs::Vector3 newVec){
+                        vec = newVec;
+                }
+void Vector3::setX(double X){
+                        vec.x = X;
+                }
+void Vector3::setY(double Y){
+                        vec.y = Y;
+                }
+void Vector3::setZ(double Z){
+                        vec.z = Z;
+                }
+double Vector3::getX(){
+                        return vec.x;
+                }
+double Vector3::getY(){
+                        return vec.y;
+                }
+double Vector3::getZ(){
+                        return vec.z;
+                }
+geometry_msgs::Vector3 Vector3::create(double x, double y, double z){
+                        geometry_msgs::Vector3 newVec;
+                        newVec.x = x;
+                        newVec.y = y;
+                        newVec.z = z;
+                        return newVec;
+                }
+geometry_msgs::Vector3 Vector3::getXComp(){
+                        return Vector3::create(vec.x , 0.0f, 0.0f);
+                }
+geometry_msgs::Vector3 Vector3::getYComp(){
+                        return Vector3::create(0.0f, vec.y, 0.0f);
+                }
+geometry_msgs::Vector3 Vector3::getZCom(){
+                        return Vector3::create(0.0f, 0.0f, vec.z);
+                }
+geometry_msgs::Vector3 Vector3::getVector(){
+                        return vec;
+                }
+
+test::test(){ }

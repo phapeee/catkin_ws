@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/devel
+
+Name: vector3
+Description: Description of vector3
+Version: 0.0.0
+Cflags: -I/home/ubuntu/catkin_ws/src/vector3/include
+Libs: -L${prefix}/lib -lvector3
+Requires: roscpp
