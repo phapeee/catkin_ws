@@ -1,2 +1,2 @@
-master:mobile_ik:ros-keyboard:vector3
+master:mecanum_ik_test:mecanum_inverse_kinematic:mobile_ik:pose_est:ros-keyboard:vector3
 -DCATKIN_DEVEL_PREFIX=/home/ubuntu/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/catkin_ws/install -G Unix Makefiles

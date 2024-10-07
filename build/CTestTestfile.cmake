@@ -7,5 +7,8 @@
 subdirs("gtest")
 subdirs("ros-keyboard")
 subdirs("master")
+subdirs("mecanum_inverse_kinematic")
+subdirs("mecanum_ik_test")
+subdirs("pose_est")
 subdirs("vector3")
 subdirs("mobile_ik")

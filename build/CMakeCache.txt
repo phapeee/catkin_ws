@@ -412,6 +412,9 @@ _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for cmath.
+cmath_DIR:PATH=cmath_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
@@ -432,6 +435,9 @@ gennodejs_DIR:PATH=/opt/ros/noetic/share/gennodejs/cmake
 
 //The directory containing a CMake configuration file for genpy.
 genpy_DIR:PATH=/opt/ros/noetic/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/gtest/googlemock
@@ -500,6 +506,24 @@ master_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/
 //Value Computed by CMake
 master_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/master
 
+//Value Computed by CMake
+mecanum_ik_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/mecanum_inverse_kinematic
+
+//The directory containing a CMake configuration file for mecanum_ik.
+mecanum_ik_DIR:PATH=/home/ubuntu/catkin_ws/devel/share/mecanum_ik/cmake
+
+//Dependencies for the target
+mecanum_ik_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/aarch64-linux-gnu/libpthread.so;general;/usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/aarch64-linux-gnu/liblog4cxx.so;general;/usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Value Computed by CMake
+mecanum_ik_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/mecanum_inverse_kinematic
+
+//Value Computed by CMake
+mecanum_ik_test_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/mecanum_ik_test
+
+//Value Computed by CMake
+mecanum_ik_test_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/mecanum_ik_test
+
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 
@@ -511,6 +535,12 @@ mobile_ik_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/mobile_ik
 
 //Value Computed by CMake
 mobile_ik_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/mobile_ik
+
+//Value Computed by CMake
+pose_est_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/pose_est
+
+//Value Computed by CMake
+pose_est_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/pose_est
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
@@ -695,7 +725,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -5,7 +5,7 @@
 #include <chrono>
 #include <thread>
 
-#define WHEEL_RADIUS (2.625) // inches
+#define WHEEL_RADIUS (1.3125) // inches
 #define WHEEL_DISTANCE (9.5625) // distance between 2 wheels
 
 //Global Variables
@@ -22,7 +22,7 @@ void inverse_kinematic_callback(const geometry_msgs::Vector3& velocities){
 	left_speed.data = c_p * velocities.y + d_p * velocities.z;
 
 	// Print out speed of two wheels;
-	ROS_INFO("Left speed: %.3f, Right Speed: %.3f", left_speed.data, right_speed.data);
+//	ROS_INFO("Left speed: %.3f, Right Speed: %.3f", left_speed.data, right_speed.data);
 }
 
 // Receive a 3D vector from topic "local_velocities", perform inverse kinematic to calculate wheel velocities of 2-Wheel drive car

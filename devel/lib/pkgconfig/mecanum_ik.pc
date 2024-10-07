@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/devel
+
+Name: mecanum_ik
+Description: Description of mecanum_ik
+Version: 0.0.0
+Cflags: -I/home/ubuntu/catkin_ws/devel/include -I/home/ubuntu/catkin_ws/src/mecanum_inverse_kinematic/include
+Libs: -L${prefix}/lib -lmecanum_ik
+Requires: roscpp
