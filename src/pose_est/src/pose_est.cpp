@@ -62,18 +62,19 @@ void calculate_pose(){
 	pose_est_out.point.x += SAMPLING_PERIOD * x_vel;
 	pose_est_out.point.y += SAMPLING_PERIOD * y_vel;
 	pose_est_out.point.z += SAMPLING_PERIOD * ang_vel;
-
+	if (pose_est_out.point.z > M_PI) pose_est_out.point.z -= 2 * M_PI;
+	else if (pose_est_out.point.z < -M_PI) pose_est_out.point.z += 2 * M_PI;
 //	ROS_INFO("Velocity: x=%.3f y=%.3f z=%.3f", x_vel, y_vel, ang_vel);
-	ROS_INFO("Position: x=%.3f y=%.3f z=%.3f", pose_est_out.point.x, pose_est_out.point.y, pose_est_out.point.z);
+	ROS_INFO("Position: x=%.3f y=%.3f theta=%.3f", pose_est_out.point.x, pose_est_out.point.y, pose_est_out.point.z);
 }
 
 int main(int argc, char **argv) {
     ros::init(argc, argv, "pose_est"); // Create the "pose_est" node
     ros::NodeHandle n; // Create the node handle object
 
-    ros::Publisher pose_est_pub = n.advertise<pose_est::pose_est_msg>("pose_est", 1000); // Publish and subscribe to topics
-    ros::Subscriber right_wheel_sub = n.subscribe("/right_wheel_enc", 1000, right_wheel_callback);	// Subsription to /right_wheel_enc topic where holds right wheel's position in rad.
-    ros::Subscriber left_wheel_sub = n.subscribe("/left_wheel_enc", 1000, left_wheel_callback);	// Subsription to /right_wheel_enc topic where holds left wheel's position in rad.
+    ros::Publisher pose_est_pub = n.advertise<pose_est::pose_est_msg>("pose_est", 100); // Publish and subscribe to topics
+    ros::Subscriber right_wheel_sub = n.subscribe("/right_wheel_enc", 100, right_wheel_callback);	// Subsription to /right_wheel_enc topic where holds right wheel's position in rad.
+    ros::Subscriber left_wheel_sub = n.subscribe("/left_wheel_enc", 100, left_wheel_callback);	// Subsription to /right_wheel_enc topic where holds left wheel's position in rad.
     // ros::Subscriber keydown_sub = n.subscribe("/keyboard/keydown", 1, keydown_callback);
 
     ros::Time time_obj;

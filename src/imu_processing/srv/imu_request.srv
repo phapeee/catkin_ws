@@ -1,0 +1,5 @@
+bool calibrate
+bool start_conversion
+bool isCalibrated
+---
+bool calibrated

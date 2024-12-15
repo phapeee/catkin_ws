@@ -182,6 +182,81 @@ mecanum_ik_test/fast:
 	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f mecanum_ik_test/CMakeFiles/mecanum_ik_test.dir/build.make mecanum_ik_test/CMakeFiles/mecanum_ik_test.dir/build
 .PHONY : mecanum_ik_test/fast
 
+# Convenience name for target.
+mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/ubuntu/catkin_ws/build && $(MAKE) -f mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make mecanum_ik_test/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -223,6 +298,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... mecanum_ik_test"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

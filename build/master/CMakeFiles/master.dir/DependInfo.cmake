@@ -19,13 +19,14 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/ubuntu/catkin_ws/devel/include"
   "/home/ubuntu/catkin_ws/src/vector3/include"
+  "/home/ubuntu/catkin_ws/src/imu_processing/include"
+  "/home/ubuntu/IEEE_ws/devel_isolated/keyboard/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ubuntu/catkin_ws/build/vector3/CMakeFiles/vector3.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

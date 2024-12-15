@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"master\"
 
-CXX_INCLUDES = -I/home/ubuntu/catkin_ws/devel/include -I/home/ubuntu/catkin_ws/src/vector3/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/ubuntu/catkin_ws/devel/include -I/home/ubuntu/catkin_ws/src/vector3/include -I/home/ubuntu/catkin_ws/src/imu_processing/include -I/home/ubuntu/IEEE_ws/devel_isolated/keyboard/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

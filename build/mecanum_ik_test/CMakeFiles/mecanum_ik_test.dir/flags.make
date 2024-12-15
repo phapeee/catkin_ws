@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"mecanum_ik_test\"
 
-CXX_INCLUDES = -I/home/ubuntu/catkin_ws/devel/include -I/home/ubuntu/catkin_ws/src/mecanum_inverse_kinematic/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/ubuntu/IEEE_ws/devel_isolated/mecanum_ik/include -I/home/ubuntu/IEEE_ws/src/mecanum_ik/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

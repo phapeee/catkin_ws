@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/devel
+
+Name: rviz_python_tutorial
+Description: Description of rviz_python_tutorial
+Version: 0.11.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
